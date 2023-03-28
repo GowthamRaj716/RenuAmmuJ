@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="51.031">
+<testcase classname="Unknown" name="_2" time="5.095">
+<failure message="Can't convert DataTable to List&lt;java.lang.String&gt;.&#10;Please review these problems:&#10;&#10; - There was a table cell transformer for java.lang.String but the table was too wide to use it.&#10;   Please reduce the table width to use this converter.&#10;&#10; - There was no table entry or table row transformer registered for java.lang.String.&#10;   Please consider registering a table entry or row transformer.&#10;&#10;Note: Usually solving one is enough" type="io.cucumber.datatable.UndefinedDataTableTypeException"><![CDATA[Given User have to enter Fb Login Page......................................passed
+* User have to click forgotten password button..............................passed
+* User have to enter invalid mobile number..................................failed
+* User have to click search button..........................................skipped
+* User have to be in error page.............................................skipped
+
+StackTrace:
+io.cucumber.datatable.UndefinedDataTableTypeException: Can't convert DataTable to List<java.lang.String>.
+Please review these problems:
+
+ - There was a table cell transformer for java.lang.String but the table was too wide to use it.
+   Please reduce the table width to use this converter.
+
+ - There was no table entry or table row transformer registered for java.lang.String.
+   Please consider registering a table entry or row transformer.
+
+Note: Usually solving one is enough
+	at io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:102)
+	at io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:144)
+	at io.cucumber.datatable.DataTable.asList(DataTable.java:199)
+	at io.cucumber.datatable.DataTable.asList(DataTable.java:187)
+	at org.stepdefinition.StepDefinition.user_have_to_enter_invalid_mobile_number(StepDefinition.java:36)
+	at ✽.User have to enter invalid mobile number(file:///C:/Users/Amirtha/eclipse-workspace/Cucumber12PmOff/src/test/resources/FeatureFiles/FrgtPwd.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="Unknown" name="_2" time="2.838">
+<failure message="Index: 10, Size: 3" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given User have to enter Fb Login Page......................................passed
+And User have to maximize the screen........................................passed
+When User have to enter valid email and invalid password....................failed
+And User have to click login button.........................................skipped
+Then User have to be in password incorrect page.............................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.stepdefinition.StepDefinition.userHaveToEntervalidEmailAndInvalidPassword(StepDefinition.java:47)
+	at ✽.User have to enter valid email and invalid password(file:///C:/Users/Amirtha/eclipse-workspace/Cucumber12PmOff/src/test/resources/FeatureFiles/Login.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Unknown" name="_3" time="34.112">
+<system-out><![CDATA[Given User have to enter Fb Login Page......................................passed
+And User have to maximize the screen........................................passed
+When User have to enter invalid email and invalid password..................passed
+And User have to click login button.........................................passed
+Then User have to be in password incorrect page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="_4" time="8.788">
+<system-out><![CDATA[Given User have to enter Fb Login Page......................................passed
+And User have to maximize the screen........................................passed
+When User have to enter invalid email and valid password....................passed
+And User have to click login button.........................................passed
+Then User have to be in password incorrect page.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
